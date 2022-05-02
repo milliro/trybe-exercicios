@@ -20,7 +20,7 @@ Para instalar o **Git** abra o seu terminal e digite o seguinte comando:
 brew install git
 ```
 
-Caso você não possua o ***brew*** instalado digite o comando abaixo no seu terminal e após a instalação execute novamente o comando acima:
+Caso você não possua o `brew` instalado digite o comando abaixo no seu terminal e após a instalação execute novamente o comando acima:
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -28,7 +28,7 @@ Caso você não possua o ***brew*** instalado digite o comando abaixo no seu ter
 
 Configuração
 
-O **Git** vem com uma ferramenta chamada ***git config*** que permite ver e atribuir variáveis de configuração que controlam todos os aspectos de como o **Git** aparece e opera.
+O **Git** vem com uma ferramenta chamada `git config` que permite ver e atribuir variáveis de configuração que controlam todos os aspectos de como o **Git** aparece e opera.
 
 Identidade
 
@@ -43,13 +43,13 @@ git config --global user.email seuemail@exemplo.br
 
 ### Editor
 
-Um outro ponto legal de se configurar é o editor onde você poderá abrir o arquivo de configuração do Git , .gitconfig , fica fácil de você visualizar as configurações do Git e também adicionar outras que julgue necessário. Para isso execute o comando à seguir no seu terminal:
+Um outro ponto legal de se configurar é o editor onde você poderá abrir o arquivo de configuração do Git , `.gitconfig` , fica fácil de você visualizar as configurações do Git e também adicionar outras que julgue necessário. Para isso execute o comando à seguir no seu terminal:
 
 ```
 git config --global core.editor "code --wait"
 ```
 
-_Esse comando define o editor do .gitconfig como o VS Code , que é o editor que você usará ao longo curso. Caso queira abrir o arquivo de configuração no VS Code basta executar em seu terminal o comando abaixo. Para isso certifique-se que você se encontra no diretório onde o arquivo .gitconfig está localizado._
+_Esse comando define o editor do `.gitconfig` como o `VS Code` , que é o editor que você usará ao longo curso. Caso queira abrir o arquivo de configuração no `VS Code` basta executar em seu terminal o comando abaixo. Para isso certifique-se que você se encontra no diretório onde o arquivo `.gitconfig` está localizado._
 
 ```
 code .gitconfig
@@ -61,14 +61,14 @@ Agora que você já configurou tudo, vamos fazer uma validação e verificar se 
 
 No terminal:
 
-* Digite ***git --version*** para saber qual versão do git está instalada.
+* Digite `git --version` para saber qual versão do git está instalada.
 
   * Seu terminal deve conter algo parecido com:
   ```
   git version 2.x.y
   ```
 
-* Digite git config --list
+* Digite `git config --list`
 
   * Seu terminal deve conter algo similar a isso:  
   ```
