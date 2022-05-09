@@ -1,0 +1,58 @@
+ol li {
+  text-transform: uppercase;
+  background: yellow;
+}
+
+ol > .li-par {
+  text-transform: none;
+  color: green;
+}
+
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+h1, h3 {
+  color: red;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+.top-3-skills {
+  color: blue;
+}
+
+.java {
+  background: pink;
+}
+
+.sites-list a:hover {
+  font-weight: bold;
+}
+
+#stack-overflow:hover {
+  color: #F48225;
+}
+
+#w3s:hover {
+  color: #059862;
+}
+
+#mdn:hover {
+  color: #1B1B1B;
+}
+
+#devdocs:hover {
+  color: yellow;
+}
+
+#trybe:hover {
+  color: #2FC08C;
+}
