@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+  color: #01A7EC;
+}
+
+h1, p {
+  text-align: center;
+}
+
+li:hover {
+  background: #FFFF46;
+}
+
+li:active, li:active a {
+  color: #FE47B3;
+}
+
+ol, ul {
+  list-style: none;
+}
