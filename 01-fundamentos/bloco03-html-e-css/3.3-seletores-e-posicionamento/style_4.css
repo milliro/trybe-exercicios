@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  color: #000;
+  font-size: 2rem;
+}
+
+div:hover {
+  border: 5px solid black;
+}
+
+div:nth-of-type(5n+1) {
+  background: #66EB73;
+}
+
+div:nth-of-type(5n+2) {
+  background: #649CD9;
+}
+
+div:nth-of-type(5n+3) {
+  background: #FFED9E;
+}
+
+div:nth-of-type(5n+4) {
+  background: #F2AC42;
+}
+
+div:nth-of-type(5n+5) {
+  background: #E16071;
+}
+
+div:nth-of-type(5n+3) {
+  padding: 60px;
+}
+
+div:nth-of-type(2n+1) > h3 {
+  font-style: italic;
+}
