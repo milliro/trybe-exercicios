@@ -1,6 +1,6 @@
 # Exercícios para fixação de conteúdo:
 
-`index_2.html`
+`index_1.html`
 
 ```
 <!DOCTYPE html>
@@ -32,7 +32,7 @@
 
 # Propriedades de texto no CSS
 
-`index_1.html`
+`index_2.html`
 
 ```
 <!DOCTYPE html>
