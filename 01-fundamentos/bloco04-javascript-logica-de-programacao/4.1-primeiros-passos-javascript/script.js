@@ -35,6 +35,8 @@ console.log('')
 
 // 3 - Faça um programa que retorne o maior de três números.
 console.log('Retorne o maior de três números')
-const highestNumberAmongAbc = a > b && a > c ? a : b > a && b > c ? b : c
+const isGreaterThan_B_And_C = a > b && a > c
+const isGreaterThan_A_And_C = b > a && b > c
+const highestNumberAmongAbc = isGreaterThan_B_And_C ? a : isGreaterThan_A_And_C ? b : c
 console.log(`O maior número entre ${a}, ${b} e ${c} é "${highestNumberAmongAbc}"`)
 console.log('')
