@@ -53,10 +53,32 @@ console.log('')
 //     retorne "positive" se esse valor for positivo, 
 //     "negative" se for negativo e "zero" caso contrário.
 
-const value = -0
+const value = 10
 const positiveOrNegative = value < 0 ? 'negative' : value > 0 ? 'positivo' : 'zero'
 console.log
 (`Retorne "positive" se esse valor for positivo, 
 "negative" se for negativo e "zero" caso contrário.`)
 console.log(positiveOrNegative)
 console.log('')
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+// 4 - Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. 
+//     Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. 
+//     Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
+
+const interiorAngleOne = 90
+const interiorAngleTwo = 45
+const interiorAngleThree = 45
+
+console.log
+(`Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.`)
+
+if (interiorAngleOne >= 0 && interiorAngleTwo >= 0 && interiorAngleThree >= 0) {
+  const sumOfAngles = interiorAngleOne + interiorAngleTwo + interiorAngleThree
+  const triangleOrNot = sumOfAngles === 180 ? 'true' : 'false'
+  console.log(triangleOrNot)
+} else {
+  console.log('Error: Angle with invalid value found.')
+}
