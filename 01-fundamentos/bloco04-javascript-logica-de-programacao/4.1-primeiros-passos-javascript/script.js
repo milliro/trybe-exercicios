@@ -132,10 +132,10 @@ console.log('')
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
 
-// 7 - Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+// 7 - Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F.
 const evaluationGrade = 60
 
-console.log('Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:')
+console.log('Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F.')
 if (evaluationGrade < 0 || evaluationGrade > 100) {
   console.log('Error: Invalid value.')
 
@@ -157,8 +157,24 @@ if (evaluationGrade < 0 || evaluationGrade > 100) {
 } else if (evaluationGrade < 50){
   console.log('You got an F') 
 }
+console.log('')
 
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
 
-// 8 - 
+// 8 - Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. 
+//     Caso contrário, ele retorna false.
+
+const num1 = 15
+const num2 = 16
+const num3 = 13
+
+const atLeastOneIsEven = num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0
+
+console.log(`Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false.`)
+if (atLeastOneIsEven) {
+  console.log('true')
+} else {
+  console.log('false')
+}
+console.log('')
