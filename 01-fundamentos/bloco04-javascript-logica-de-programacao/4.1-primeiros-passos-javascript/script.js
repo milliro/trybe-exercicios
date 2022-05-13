@@ -90,6 +90,7 @@ console.log('')
 // 6 - Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
 
 const chessPiece = 'Pawn'
+console.log('Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.')
 switch (chessPiece.toLowerCase()) {
   case 'king':
     console.log(chessPiece.toLowerCase())
@@ -132,9 +133,13 @@ console.log('')
 ////////////////////////////////////////////////////////////////////////////////////////
 
 // 7 - Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
-const evaluationGrade = 33
+const evaluationGrade = 60
 
-if (evaluationGrade >= 90) {
+console.log('Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:')
+if (evaluationGrade < 0 || evaluationGrade > 100) {
+  console.log('Error: Invalid value.')
+
+} else if (evaluationGrade >= 90) {
   console.log('You got an A') 
 
 } else if (evaluationGrade >= 80) {
@@ -149,9 +154,11 @@ if (evaluationGrade >= 90) {
 } else if (evaluationGrade >= 50) {
   console.log('You got an E') 
   
-} else {
+} else if (evaluationGrade < 50){
   console.log('You got an F') 
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
+
+// 8 - 
