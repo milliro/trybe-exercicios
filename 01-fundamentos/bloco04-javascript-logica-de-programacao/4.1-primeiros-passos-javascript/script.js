@@ -127,3 +127,31 @@ switch (chessPiece.toLowerCase()) {
     break
 }
 console.log('')
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+// 7 - Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+const evaluationGrade = 33
+
+if (evaluationGrade >= 90) {
+  console.log('You got an A') 
+
+} else if (evaluationGrade >= 80) {
+  console.log('You got an B') 
+
+} else if (evaluationGrade >= 70) {
+  console.log('You got an C') 
+
+} else if (evaluationGrade >= 60) {
+  console.log('You got an D') 
+
+} else if (evaluationGrade >= 50) {
+  console.log('You got an E') 
+  
+} else {
+  console.log('You got an F') 
+}
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
