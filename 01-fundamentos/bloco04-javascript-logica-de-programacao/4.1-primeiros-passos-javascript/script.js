@@ -191,3 +191,20 @@ if (atLeastOneIsOdd) {
   console.log('false')
 }
 console.log('')
+
+
+
+// 10 - Escreva um programa que se inicie com dois valores em duas constantes diferentes: 
+//      O custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro 
+//      (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+
+const costValue = 488
+const saleValue = 760
+
+if (costValue >= 0 && saleValue >= 0) {
+  const fullCostValue = costValue * 1.2
+  const profit = saleValue - fullCostValue
+  console.log(`By selling 1.000 of these products, the company will earn ${profit * 1000}$.`)
+} else {
+  console.log('Error: Impossible to sell a product with negative value. Please enter a valid value.')
+}
