@@ -165,14 +165,27 @@ console.log('')
 // 8 - Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. 
 //     Caso contrário, ele retorna false.
 
-const num1 = 15
+const num1 = 20
 const num2 = 16
-const num3 = 13
+const num3 = 18
 
 const atLeastOneIsEven = num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0
 
 console.log(`Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false.`)
 if (atLeastOneIsEven) {
+  console.log('true')
+} else {
+  console.log('false')
+}
+console.log('')
+
+// 9 - Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. 
+//     Caso contrário, ele retorna false.
+
+const atLeastOneIsOdd = num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0
+
+console.log(`Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false.`)
+if (atLeastOneIsOdd) {
   console.log('true')
 } else {
   console.log('false')
