@@ -179,6 +179,9 @@ if (atLeastOneIsEven) {
 }
 console.log('')
 
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
 // 9 - Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. 
 //     Caso contrário, ele retorna false.
 
@@ -192,7 +195,8 @@ if (atLeastOneIsOdd) {
 }
 console.log('')
 
-
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
 
 // 10 - Escreva um programa que se inicie com dois valores em duas constantes diferentes: 
 //      O custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro 
@@ -207,4 +211,144 @@ if (costValue >= 0 && saleValue >= 0) {
   console.log(`By selling 1.000 of these products, the company will earn ${profit * 1000}$.`)
 } else {
   console.log('Error: Impossible to sell a product with negative value. Please enter a valid value.')
+}
+console.log('')
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+// 11 - Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. 
+//      Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+
+const grossWage = 2000000
+
+if (grossWage < 0) {
+  console.log('Error: Value entered is not valid')
+
+} else if (grossWage <= 1556.94) {
+  const aliquot = grossWage * 0.08
+  const grossWageDeduced = grossWage - aliquot
+
+  if (grossWageDeduced <= 1903.98) {
+    console.log(`O salário líquido é de ${grossWageDeduced}`)
+
+  } else if (grossWageDeduced <= 2826.65) {
+    const irAliquot = (grossWageDeduced * 0.075) - 142.8
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+
+  } else if (grossWageDeduced <= 3751.05) {
+    const irAliquot = (grossWageDeduced * 0.15) - 354.80
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+
+  } else if (grossWageDeduced <= 4664.68) {
+    const irAliquot = (grossWageDeduced * 0.225) - 636.13
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+
+  } else {
+    const irAliquot = (grossWageDeduced * 0.275) - 869.36
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+  }
+
+} else if (grossWage <=  2594.92) {
+  const aliquot = grossWage * 0.09
+  const grossWageDeduced = grossWage - aliquot
+  
+  if (grossWageDeduced <= 1903.98) {
+    console.log(`O salário líquido é de ${grossWageDeduced}`)
+
+  } else if (grossWageDeduced <= 2826.65) {
+    const irAliquot = (grossWageDeduced * 0.075) - 142.8
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+
+  } else if (grossWageDeduced <= 3751.05) {
+    const irAliquot = (grossWageDeduced * 0.15) - 354.80
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+
+  } else if (grossWageDeduced <= 4664.68) {
+    const irAliquot = (grossWageDeduced * 0.225) - 636.13
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+
+  } else {
+    const irAliquot = (grossWageDeduced * 0.275) - 869.36
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+  }
+
+} else if (grossWage <= 5189.82) {
+  const aliquot = grossWage * 0.11
+  const grossWageDeduced = grossWage - aliquot
+
+  if (grossWageDeduced <= 1903.98) {
+    console.log(`O salário líquido é de ${grossWageDeduced}`)
+
+  } else if (grossWageDeduced <= 2826.65) {
+    const irAliquot = (grossWageDeduced * 0.075) - 142.8
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+
+  } else if (grossWageDeduced <= 3751.05) {
+    const irAliquot = (grossWageDeduced * 0.15) - 354.80
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+
+  } else if (grossWageDeduced <= 4664.68) {
+    const irAliquot = (grossWageDeduced * 0.225) - 636.13
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+
+  } else {
+    const irAliquot = (grossWageDeduced * 0.275) - 869.36
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+  }
+
+} else {
+  const grossWageDeduced = grossWage - 570.88
+
+  if (grossWageDeduced <= 1903.98) {
+    console.log(`O salário líquido é de ${grossWageDeduced}`)
+
+  } else if (grossWageDeduced <= 2826.65) {
+    const irAliquot = (grossWageDeduced * 0.075) - 142.8
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+
+  } else if (grossWageDeduced <= 3751.05) {
+    const irAliquot = (grossWageDeduced * 0.15) - 354.80
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+
+  } else if (grossWageDeduced <= 4664.68) {
+    const irAliquot = (grossWageDeduced * 0.225) - 636.13
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+
+  } else {
+    const irAliquot = (grossWageDeduced * 0.275) - 869.36
+    const netWage = grossWageDeduced - irAliquot
+
+    console.log(`O salário líquido é de ${netWage}`)
+  }
 }
