@@ -63,19 +63,19 @@ console.log('')
 ////////////////////////////////////////////////////////////////////////////////////////
 
 // 5 - Utilizando for, descubra qual o maior valor contido no array e imprima-o;
-let number = 0
+let higherNumber = 0
 // com for;
 console.log('com for')
 for (let index = 0; index < numbers.length; index += 1) {
-  number = numbers[index]
+  higherNumber = numbers[index]
 
   for(let index = 0; index < numbers.length; index += 1) {
-    if (number < numbers[index]) {
-      number = numbers[index]
+    if (higherNumber < numbers[index]) {
+      higherNumber = numbers[index]
     }
   }
 }
-console.log(number)
+console.log(higherNumber)
 
 // sem for;
 console.log('sem for')
@@ -103,3 +103,54 @@ if (counter === 0) {
   counter = 0
 }
 console.log('')
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+// 7 - Utilizando for, descubra qual o menor valor contido no array e imprima-o;
+
+let smallestNumber = 0
+// com for;
+console.log('com for')
+for (let index = 0; index < numbers.length; index += 1) {
+  smallestNumber = numbers[index]
+
+  for(let index = 0; index < numbers.length; index += 1) {
+    if (smallestNumber > numbers[index]) {
+      smallestNumber = numbers[index]
+    }
+  }
+}
+console.log(smallestNumber)
+
+// sem for;
+console.log('sem for')
+const minNumber = Math.min(...numbers)
+console.log(minNumber)
+console.log('')
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+// 8 - Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
+
+let upToTwentyFive = []
+for (let index = 0; index < 26; index += 1){
+  upToTwentyFive.push(index)
+}
+console.log(upToTwentyFive)
+console.log('')
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+// 9 - Utilizando o array criado no exercício anterior 
+//     imprima o resultado da divisão de cada um dos elementos por 2.
+
+for (let index = 0; index < upToTwentyFive.length; index += 1){
+  console.log(upToTwentyFive[index] / 2)
+}
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
