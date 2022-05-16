@@ -81,6 +81,25 @@ console.log(number)
 console.log('sem for')
 const maxNumber = Math.max(...numbers)
 console.log(maxNumber)
+console.log('')
 
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
+
+// 6 - Descubra quantos valores ímpares existem no array e imprima o resultado. 
+//     Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
+
+let counter = 0
+
+for(let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] % 2 !== 0) {
+    counter++
+  }
+}
+if (counter === 0) {
+  console.log('nenhum valor ímpar encontrado!')
+} else {
+  console.log(`${counter} números ímpares encontrados`)
+  counter = 0
+}
+console.log('')
