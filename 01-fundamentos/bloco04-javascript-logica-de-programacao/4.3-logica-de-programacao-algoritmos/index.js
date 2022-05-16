@@ -58,3 +58,36 @@ biggestWord = ''
 
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
+
+// 4 - Um número primo é aquele divisível apenas por 1 e por ele mesmo. 
+//     Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 0 e 50.
+let higherNumber = 0
+let primeNumbersArray = []
+
+for (let number = 2; number <= 50; number += 1) {
+  let isPrimeNumber = true
+  
+  for (let divider = 2; divider < number; divider += 1) {
+    if (number % divider === 0) {
+      isPrimeNumber = false
+      break;
+    }
+  }
+  if (isPrimeNumber) {
+    primeNumbersArray.push(number)
+  }
+}
+
+for (let index = 0; index < primeNumbersArray.length; index += 1) {
+  higherNumber = primeNumbersArray[index]
+  
+  for (let index = 0; index < primeNumbersArray.length; index += 1) {
+    if (higherNumber < primeNumbersArray[index]) {
+      higherNumber = primeNumbersArray[index]
+    }
+  }
+}
+
+console.log(`O maior número primo entre 0 e 50 é ${higherNumber}`)
+console.log('')
+higherNumber = 0
