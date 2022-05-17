@@ -1,3 +1,5 @@
+// Parte I - Objetos e For/In
+
 // Usando o objeto abaixo, faça os exercícios a seguir:
 let info = {
   personagem: 'Margarida',
@@ -114,6 +116,25 @@ console.log('')
 //    "Julia tem 2 livros favoritos".
 
 console.log(`${leitor.nome} tem ${leitor.livrosFavoritos.length} livros favoritos`)
+console.log('')
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+// Parte II - Funções
+
+// 1 - Crie uma função que receba uma string e retorne true se for um palíndromo, ou false, se não for.
+
+const verificaPalindrome = (word) => {
+  const wordReverse = word.split('').reverse().join('')
+  if (word === wordReverse) {
+    return true
+  }
+  return false
+}
+
+console.log(verificaPalindrome('arara'))
+console.log(verificaPalindrome('desenvolvimento'))
 console.log('')
 
 ////////////////////////////////////////////////////////////////////////////////////////
