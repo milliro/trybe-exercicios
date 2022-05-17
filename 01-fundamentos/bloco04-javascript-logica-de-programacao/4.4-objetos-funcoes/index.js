@@ -177,3 +177,26 @@ console.log('')
 
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
+
+// 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+
+const nomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']
+
+const biggestNameIndex = (wordArray) => {
+  let nameNumber = nomes[0].length
+  let name = nomes[0]
+  
+  wordArray.forEach(nome => {
+    if (nameNumber < nome.length) {
+      nameNumber = nome.length
+      name = nome
+    }
+  })
+  
+  return name
+}
+
+console.log(biggestNameIndex(nomes))
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
