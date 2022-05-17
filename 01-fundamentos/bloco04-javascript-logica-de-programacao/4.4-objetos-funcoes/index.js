@@ -142,11 +142,11 @@ console.log('')
 
 // 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
 
-const intNumbers = [2, 3, 6, 7, 10, 1]
+const intNumbers = [2, 3, 6, 7, 10, 1, -3]
 
 const biggestArrayNumber = (intArray) => {
   const higherNumber = Math.max(...intArray)
-  
+
   for (let index = 0; index < intArray.length; index += 1) {
     if (higherNumber === intArray[index]) {
       return index
@@ -155,3 +155,25 @@ const biggestArrayNumber = (intArray) => {
 }
 
 console.log(biggestArrayNumber(intNumbers))
+console.log('')
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+// 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+const smallestArrayNumber = (intArray) => {
+  const higherNumber = Math.min(...intArray)
+
+  for (let index = 0; index < intArray.length; index += 1) {
+    if (higherNumber === intArray[index]) {
+      return index
+    }
+  }
+}
+
+console.log(smallestArrayNumber(intNumbers))
+console.log('')
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
