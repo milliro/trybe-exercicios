@@ -139,3 +139,19 @@ console.log('')
 
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
+
+// 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+
+const intNumbers = [2, 3, 6, 7, 10, 1]
+
+const biggestArrayNumber = (intArray) => {
+  const higherNumber = Math.max(...intArray)
+  
+  for (let index = 0; index < intArray.length; index += 1) {
+    if (higherNumber === intArray[index]) {
+      return index
+    }
+  }
+}
+
+console.log(biggestArrayNumber(intNumbers))
