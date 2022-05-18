@@ -31,9 +31,9 @@ console.log('')
 
 // 3 - Faça um for/in que mostre todas as chaves do objeto.
 
-for (key in info) {
+for (key in info) 
   console.log(key)
-}
+
 console.log('')
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -41,9 +41,9 @@ console.log('')
 
 // 4 - Faça um novo for/in, mas agora mostre todos os valores das chaves do objeto.
 
-for (key in info) {
+for (key in info) 
   console.log(info[key])
-}
+
 console.log('')
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -125,11 +125,11 @@ console.log('')
 
 // 1 - Crie uma função que receba uma string e retorne true se for um palíndromo, ou false, se não for.
 
-const verificaPalindrome = (word) => {
+const verificaPalindrome = word => {
   const wordReverse = word.split('').reverse().join('')
-  if (word === wordReverse) {
+  if (word === wordReverse) 
     return true
-  }
+  
   return false
 }
 
@@ -142,15 +142,15 @@ console.log('')
 
 // 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
 
-const intNumbers = [2, 3, 6, 7, 10, 1, -3]
+const intNumbers = [2, 3, 6, 7, 10, 1, -3, 2]
 
-const biggestArrayNumber = (intArray) => {
+const biggestArrayNumber = intArray => {
   const higherNumber = Math.max(...intArray)
 
   for (let index = 0; index < intArray.length; index += 1) {
-    if (higherNumber === intArray[index]) {
+    if (higherNumber === intArray[index]) 
       return index
-    }
+    
   }
 }
 
@@ -162,13 +162,13 @@ console.log('')
 
 // 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
 
-const smallestArrayNumber = (intArray) => {
+const smallestArrayNumber = intArray => {
   const higherNumber = Math.min(...intArray)
 
   for (let index = 0; index < intArray.length; index += 1) {
-    if (higherNumber === intArray[index]) {
+    if (higherNumber === intArray[index]) 
       return index
-    }
+    
   }
 }
 
@@ -182,7 +182,7 @@ console.log('')
 
 const nomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']
 
-const biggestNameIndex = (wordArray) => {
+const biggestNameIndex = wordArray => {
   let nameNumber = nomes[0].length
   let name = nomes[0]
   
@@ -192,11 +192,56 @@ const biggestNameIndex = (wordArray) => {
       name = nome
     }
   })
-  
+
   return name
 }
 
 console.log(biggestNameIndex(nomes))
+console.log('')
 
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
+
+// 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+
+const returnsHighestOccurrence = array => {
+  const myObjects = []
+
+  const getOccurrences = (array, value) => {
+    const occurrences = array.reduce((acc, item) => value === item ? acc + 1 : acc, 0);
+    return ({
+      value: value,
+      occurrences: occurrences,
+    })
+  }
+
+  const addOccurrences = (array, objectArray) => {
+    array.forEach(item => {
+      objectArray.push(getOccurrences(array, item))
+    })
+  }
+  addOccurrences(array, myObjects)
+
+  let higherNumber = 0
+  let currentValue = 0
+
+  const checkHigherOccurrence = () => {
+    for (let index = 0; index < myObjects.length; index += 1) {
+      higherNumber = myObjects[index].occurrences
+      currentValue = myObjects[index].value
+  
+      for(let index = 0; index < myObjects.length; index += 1) {
+        if (higherNumber < myObjects[index].occurrences) {
+          higherNumber = myObjects[index].occurrences
+          currentValue = myObjects[index].value
+        }
+      }
+    }
+  }
+  checkHigherOccurrence()
+
+  return currentValue
+}
+
+console.log(returnsHighestOccurrence(intNumbers))
+console.log('')
