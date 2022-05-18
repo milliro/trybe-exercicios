@@ -207,7 +207,7 @@ console.log('')
 const returnsHighestOccurrence = array => {
   const myObjects = []
 
-  const getOccurrences = (array, value) => {
+  const getOccurrences = value => {
     const occurrences = array.reduce((acc, item) => value === item ? acc + 1 : acc, 0);
     return ({
       value: value,
@@ -215,12 +215,12 @@ const returnsHighestOccurrence = array => {
     })
   }
 
-  const addOccurrences = (array, objectArray) => {
+  const addOccurrences = () => {
     array.forEach(item => {
-      objectArray.push(getOccurrences(array, item))
+      myObjects.push(getOccurrences(item))
     })
   }
-  addOccurrences(array, myObjects)
+  addOccurrences()
 
   let higherNumber = 0
   let currentValue = 0
@@ -240,8 +240,13 @@ const returnsHighestOccurrence = array => {
   }
   checkHigherOccurrence()
 
-  return currentValue
+  return `O numero inteiro que mais se repete é ${currentValue}`
 }
-
 console.log(returnsHighestOccurrence(intNumbers))
 console.log('')
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+// 6 - Crie uma função que receba um número natural (número inteiro não negativo) 
+// N e retorne o somatório de todos os números de 1 até N.
