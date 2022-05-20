@@ -9,16 +9,29 @@ main.classList.add('main-content');
 
 
 const section = document.createElement('section');
-section.classList.add('center-content')
+section.classList.add('center-content');
 
 const paragraph = document.createElement('p')
-paragraph.innerText = 'Algum texto.'
+paragraph.innerText = 'Algum texto.';
 
 const leftSection = document.createElement('section');
-leftSection.classList.add('left-content')
+leftSection.classList.add('left-content');
 
 const rightSection = document.createElement('section');
-rightSection.classList.add('right-content')
+rightSection.classList.add('right-content');
+
+const img = document.createElement('img');
+img.classList.add('small-image');
+img.setAttribute('src', 'https://picsum.photos/200');
+
+const ul = document.createElement('ul');
+const numberList = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+
+for (number of numberList) {
+  const li = document.createElement('li');
+  li.innerText = number;
+  ul.appendChild(li);
+}
 
 // insert to body;
 body.appendChild(title);
@@ -29,5 +42,12 @@ main.appendChild(section);
 main.appendChild(leftSection);
 main.appendChild(rightSection);
 
-//insert to section;
-section.appendChild(paragraph)
+for (let index = 0; index < 4; index += 1) {
+  const h3 = document.createElement('h3');
+  main.appendChild(h3);
+}
+
+//insert to sections;
+section.appendChild(paragraph);
+leftSection.appendChild(img);
+rightSection.appendChild(ul);
