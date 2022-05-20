@@ -32,7 +32,8 @@ for (number of numberList) {
   li.innerText = number;
   ul.appendChild(li);
 }
-
+ul.lastChild.remove()
+ul.lastChild.remove()
 // insert to body;
 body.appendChild(title);
 body.appendChild(main);
@@ -44,6 +45,7 @@ main.appendChild(rightSection);
 
 for (let index = 0; index < 4; index += 1) {
   const h3 = document.createElement('h3');
+  h3.classList.add('description');
   main.appendChild(h3);
 }
 
@@ -51,3 +53,10 @@ for (let index = 0; index < 4; index += 1) {
 section.appendChild(paragraph);
 leftSection.appendChild(img);
 rightSection.appendChild(ul);
+
+// Parte II
+
+title.classList.add('title');
+main.removeChild(leftSection);
+rightSection.style.marginRight = 'auto';
+section.style.backgroundColor = '#2FC08C'
