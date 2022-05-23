@@ -47,7 +47,7 @@ buttonsContainer.append(createButton('Sexta-feira', 'btn-friday'));
 const btnHoliday = document.querySelector('#btn-holiday');
 const holidayLi = document.querySelectorAll('.holiday');
 
-btnHoliday.addEventListener('click', () => {
+const changeBackgroundColor = () => {
   holidayLi.forEach(item => {
     if (item.style.backgroundColor !== 'rgba(0, 0, 0, 0.1)') {
       item.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
@@ -55,4 +55,24 @@ btnHoliday.addEventListener('click', () => {
       item.style.backgroundColor = 'rgba(238, 238, 238, 1)';
     }
   })
+}
+btnHoliday.addEventListener('click', changeBackgroundColor)
+
+const btnFriday = document.querySelector('#btn-friday')
+const fridayLi = document.querySelectorAll('.friday')
+const listItems = ulDays.querySelectorAll('li')
+
+btnFriday.addEventListener('click', () => {
+  dezDaysList.forEach((item, index) => {
+    listItems[index].innerText = item
+  })
+  fridayLi.forEach(item => {
+    if (item.classList.contains('friday')) {
+      item.innerText = 'FRIDAY'
+    }
+    item.classList.toggle('friday')
+  })
 })
+
+
+
