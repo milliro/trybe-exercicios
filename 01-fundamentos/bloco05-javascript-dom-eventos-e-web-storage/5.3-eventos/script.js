@@ -34,14 +34,15 @@ dezDaysList.forEach(item => {
   ulDays.append(listItem);
 })
 
-const createButton = name => {
+const createButton = (name, id) => {
   const btn = document.createElement('button');
   btn.name = name;
   btn.innerText = name;
-  btn.id = 'btn-holiday';
-  buttonsContainer.append(btn);
+  btn.id = id;
+  return btn;
 }
-createButton('Feriados');
+buttonsContainer.append(createButton('Feriados', 'btn-holiday'));
+buttonsContainer.append(createButton('Sexta-feira', 'btn-friday'));
 
 const btnHoliday = document.querySelector('#btn-holiday');
 const holidayLi = document.querySelectorAll('.holiday');
