@@ -1,27 +1,34 @@
+const a = 6
+const b = 8
+const c = 10
+
 // 1- Faça cinco programas, um para cada operação aritmética básica. 
+console.log('Faça cinco programas, um para cada operação aritmética básica.')
 
-const a = 5
-const b = 30
-const c = 12
+const adicao = (a, b) => {
+  return a + b
+}
+console.log(adicao(73, 37))
 
-console.log('Adição (a + b)')
-console.log(a + b)
-console.log('')
+const subtracao = (a, b) => {
+  return a - b
+}
+console.log(subtracao(73, 37))
 
-console.log('Subtração (a - b)')
-console.log(a - b)
-console.log('')
+const multiplicacao = (a, b) => {
+  return a * b
+}
+console.log(multiplicacao(73, 37))
 
-console.log('Multiplicação (a * b)')
-console.log(a * b)
-console.log('')
+const divisao = (a, b) => {
+  return a / b
+}
+console.log(divisao(73, 37))
 
-console.log('Divisão (a / b)')
-console.log(a / b)
-console.log('')
-
-console.log('Módulo (a % b)')
-console.log(a % b)
+const modulo = (a, b) => {
+  return a % b
+}
+console.log(modulo(73, 37))
 console.log('')
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -30,8 +37,16 @@ console.log('')
 // 2 - Faça um programa que retorne o maior de dois números. 
 
 console.log('Retorne o maior de dois números')
-const higherNumber = a > b ? a : b
-console.log(`O maior número entre ${a} e ${b} é "${higherNumber}"`)
+
+const greaterBetweenTwoNumbers = (a, b) => {
+  if (a === b) {
+    return 'Os dois números são iguais.'
+  }
+  const higherNumber = a > b ? a : b
+  return `O maior número entre ${a} e ${b} é "${higherNumber}"`
+}
+console.log(greaterBetweenTwoNumbers(10, 15))
+console.log(greaterBetweenTwoNumbers(10, 10))
 console.log('')
 
 ////////////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,45 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  margin-bottom: 80px;
+}
+
+/* main */
+
+.main {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  border: 1px solid red;
+}
+
+.main-content {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.main-content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sub-title {
+
+}
