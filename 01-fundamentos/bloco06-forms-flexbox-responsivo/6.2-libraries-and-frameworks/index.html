@@ -4,139 +4,148 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <title>Form | TrybeTrip</title>
 </head>
 <body>
-  <header>
-    <h1>TrybeTrip</h1>
+  <header class="container text-center">
+    <h1 class="display-1">TrybeTrip</h1>
   </header>
-  <form action="" method="get">
-    <div>
-      <label
-        for="input-name">
-        Full name:
-      </label>
-      <input
-        type="text"
-        minlength="10"
-        maxlength="40"
-        placeholder="Enter your full name"
-        id="input-name"
-        name="name"
-        required
-      >
-    </div>
-
-    <div class="container">
-      <label 
-        for="input-email">
-        Email:
-      </label>
-      <input
-        type="email"
-        minlength="10"
-        maxlength="50"
-        placeholder="Enter your best email"
-        id="input-email"
-        name="email"
-        required
-      >
-    </div>
-
-    <div>
-      <label for="destination">Preferred destination</label>
-
-      <div>
-        <label for="city">
-          <input
-          type="radio"
-          id="city"
-          name="destination"
-          checked
-          >
-          City
+  <main class="container" id="main">
+    <form action="" method="get">
+      <div class="mb-3">
+        <label
+          for="input-name">
+          Full name:
         </label>
-
-        <label for="countryside">
-          <input
-          type="radio"
-          id="countryside"
-          name="destination"
-          >
-          Countryside
-        </label>
-
-        <label for="beach">
-          <input
-          type="radio"
-          id="beach"
-          name="destination"
-          >
-          Beach
-        </label>
-
-        <label for="mountains">
-          <input
-          type="radio"
-          id="mountains"
-          name="destination"
-          >
-          Mountains
-        </label>
-      </div>
-      
-    </div>
-
-    <div>
-      <label 
-        for="win-because">
-        Why should I win?
-      </label>
-      <div>
-        <textarea
-          maxlength="500"
-          id="win-because"
+        <input
+          class="form-control"
+          type="text"
+          minlength="10"
+          maxlength="40"
+          placeholder="Enter your full name"
+          id="input-name"
+          name="name"
           required
-        ></textarea>
+        >
       </div>
-    </div>
-
-    <div>
-      <label for="input-date">Date:</label>
-      <input
-        type="date"
-        id="input-date"
-        name="date"
-        required
-      >
-    </div>
-
-    <div>
-      <label for="agree-1">
-        Would you like to receive other amazing opportunities offered by Trybe?
-      </label>
-      <input
-        type="checkbox"
-        id="agree-1"
-        name="agree-1"
-      >
-    </div>
-
-    <div>
-      <label for="agree-2">
-        I agree that images from my vacations may be used to advertise future contests.
-      </label>
-      <input
-        type="checkbox"
-        id="agree-2"
-        name="agree-2"
-      >
-    </div>
-
-    <button type="submit">Submit</button>
-    <button type="reset">Clear</button>
-  </form>
-  <script src="script.js"></script>
+  
+      <div class="container mb-3">
+        <label
+          class="form-label" 
+          for="input-email">
+          Email:
+        </label>
+        <input
+          class="form-control"
+          type="email"
+          minlength="10"
+          maxlength="50"
+          placeholder="Enter your best email"
+          id="input-email"
+          name="email"
+          required
+        >
+      </div>
+  
+      <div>
+        <label for="destination">Preferred destination</label>
+  
+        <div class="mb-3 form-check" id="destination">
+          <label for="city">
+            <input
+            type="radio"
+            id="city"
+            name="destination"
+            checked
+            >
+            City
+          </label>
+  
+          <label for="countryside">
+            <input
+            type="radio"
+            id="countryside"
+            name="destination"
+            >
+            Countryside
+          </label>
+  
+          <label for="beach">
+            <input
+            type="radio"
+            id="beach"
+            name="destination"
+            >
+            Beach
+          </label>
+  
+          <label for="mountains">
+            <input
+            type="radio"
+            id="mountains"
+            name="destination"
+            >
+            Mountains
+          </label>
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label 
+          for="win-because">
+          Why should I win?
+        </label>
+        <div>
+          <textarea
+            class="form-control"
+            maxlength="500"
+            id="win-because"
+            required
+          ></textarea>
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="input-date">Date:</label>
+        <input
+          type="date"
+          id="input-date"
+          name="date"
+          required
+        >
+      </div>
+  
+      <div class="mb-3">
+        <div class="form-check form-switch">
+          <label for="agree-1" class="form-check-label">
+            Would you like to receive other amazing opportunities offered by Trybe?
+          </label>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="agree-1"
+            name="agree-1"
+          >
+        </div>
+    
+        <div class="form-check form-switch">
+          <label for="agree-2" class="form-check-label">
+            I agree that images from my vacations may be used to advertise future contests.
+          </label>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="agree-2"
+            name="agree-2"
+          >
+        </div>
+      </div>
+  
+      <button class="btn btn-success" type="submit">Submit</button>
+      <button class="btn btn-danger" type="reset">Clear</button>
+    </form>
+  </main>
 </body>
 </html>
